@@ -74,7 +74,12 @@ body {
     width: 50vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+#h1e {
+    
+    margin-top: 3vh;
 }
 
 #rectBody2 {
@@ -95,8 +100,9 @@ body {
     line-height: 20vh;
     border: 2px solid black;
     text-align: center;
-    background-size: 100% 100%;
+    background-size:cover;
     background-repeat: no-repeat;
+    background-position: 50%;
 }
 
 .title {
@@ -104,13 +110,11 @@ body {
     font-size: 1.1em;
 }
 
-#cont1, #cont2, #cont3 {
+.cont {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
-
-.cont {
+    align-items: center;
     height: 100%;
 }
 
@@ -124,4 +128,30 @@ body {
 
 #p3 {
     background-image: url(https://www.mtp.es/wp-content/uploads/2020/12/CS_MTP_2020.jpg);
+}
+
+@media only screen and (max-width: 768px){
+    .cont {
+        width: 20vh;
+        justify-content: space-between;
+        margin-bottom: 10vh;
+    }
+    
+    .prod {
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+
+    #aBody {
+        font-size: .9em;
+    }
+
+    #tit2 {
+        width: 75vw;
+    }
+
+    #rect {
+        height: 25vh;
+        width: 45vw;
+    }
 }
